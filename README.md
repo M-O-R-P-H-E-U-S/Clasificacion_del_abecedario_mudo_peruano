@@ -78,24 +78,52 @@ shuffle.py
 ```
 Seguidamente separamos cada archivo csv en dos tipos, el primero sera para el entrenamiento del modelo y el segundo sera para la prueba(testeo) del modelo este ultimo archivo sera de menor cantidad. Todos los archivos(csv) de entrenamiento tienen en total 32992 filas y los archivos(csv) de prueba(testeo) tienen en total 13000 filas. 
 
-```
-from_mp4_to_jpg.py
-```
+Obteniendo 04 conjuntos de datasets:
+
+*Primer Conjunto: S_GRAY_28, T_GRAY_28
+
+*Segundo Conjunto: S_GRAY_50, T_GRAY_50
+
+*Tercer Conjunto: S_RGB_28, T_RGB_28
+
+*Cuarto Conjunto: S_RGB_50, T_RGB_50
+
+S_ : Data de entrenamiento.
+T_ : Data de prueba(testeo).
+
+Experimental
+-----
+
+Iniciamos ploteando nuestro conteo de frames por etiquetas, para ello hacemos uso del siguiente script:
+
 ```
 Ploting_images.py
 ```
 
-Experimental
------
+Seguidamente ploteamos nuestros frames con sus respectivas etiquetas: 
+
+
+```
+Ploting_images.py
+```
+
 
 
 
 Resultados
 -----
 
+Mostrandose los ploteos del conteo de frames por etiqueta de cada uno de nuestros conjuntos de dataset:
+
+
+
+
 
 Conclusiones
 -----
+
+
+
 
 Trabajos Futuros
 -----
