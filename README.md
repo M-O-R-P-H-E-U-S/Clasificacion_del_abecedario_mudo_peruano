@@ -41,10 +41,33 @@ El Lenguaje de Señas es un lenguaje visual, por ello nuestro proyecto no asimil
 Metodologia
 -----
 
-```
+Para poder construir nuestro dataset, comenzamos grabando nuestra mano ya sea la mano izquierda o la derecha debido a que los signos se interpretan de la misma manera sin importar con que mano se realizan. Grabando cada signo durante 40s siendo 02 videos por signo(02 manos), en total 46 videos de 40s cada uno. 
+
+Creamos las siguientes carpetas: GS_28, GS_50, RGB_28, RGB_50. Carpetas cuya finalidad es 
+
+Seguidamente ordenamos nuestos videos en carpetas con el nombre de las letras del abecedario, cargamos nuestro dataset de videos, definiendo las dimensiones en pixeles que deseamos obtener de los frames de nuestros videos y customizando los canaloes a analisar(RGB y GRAYSCALE), al siguiente script:
 
 ```
+from_mp4_to_jpg.py
+```
+Donde se almacenaran los siguientes 
+Ordenamos nuestro nuevo dataset de fotos en carpetas con el nombre de las letras del abecedario. 
+Cargamos nuestro dataset de fotos,ordenandolos en las filas por etiquetas y en las columnas por pixeles , al siguiente script:
 
+```
+convert_to_csv.py
+```
+
+Con un tal de 784 columnas para los frames de (28px)x(28px), 2500 columnas para los frames de (50px)x(50px) en escalas de grises. Y en los 03 canales(RGB) 2352 columnas para los frames de (28px)x(28px), 7500 columnas para los frames de (50px)x(50px).
+```
+from_mp4_to_jpg.py
+```
+```
+from_mp4_to_jpg.py
+```
+```
+from_mp4_to_jpg.py
+```
 
 Experimental
 -----
