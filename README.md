@@ -36,11 +36,14 @@ La educación de la persona sorda en nuestro país está todavía estancada en e
 Problematica
 -----
 
-La lengua de signos es un lenguaje visual, por ello nuestro proyecto no asimila los siguientes signos: j, ñ, ll, rr, s, z. Debido a su complejidad visual para poder formar parte de nuestro algoritmo de reconocimiento de signos.   
+El Lenguaje de Señas es un lenguaje visual, por ello nuestro proyecto no asimila los siguientes signos: j, ñ, ll, rr, s, z. Signos realizados mediante movimientos de zig-zag o de repeticion, a diferencia de los demas signos que se pueden entender de manera estatica. Debido a su complejidad visual para poder formar parte de nuestro algoritmo de reconocimiento de signos, no son asimilados en nuestro proyecto.   
 
 Metodologia
 -----
 
+```
+
+```
 
 
 Experimental
