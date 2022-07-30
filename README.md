@@ -43,14 +43,14 @@ Metodologia
 
 Para poder construir nuestro dataset, comenzamos grabando nuestra mano ya sea la mano izquierda o la derecha debido a que los signos se interpretan de la misma manera sin importar con que mano se realizan. Grabando cada signo durante 40s siendo 02 videos por signo(02 manos), en total 46 videos de 40s cada uno. 
 
-Creamos las siguientes carpetas: GS_28, GS_50, RGB_28, RGB_50. Carpetas cuya finalidad es 
+Creamos las siguientes carpetas: GS_28, GS_50, RGB_28, RGB_50. Donde se almacenaran nuestros dataset conforme sea customizados. 
 
-Seguidamente ordenamos nuestos videos en carpetas con el nombre de las letras del abecedario, cargamos nuestro dataset de videos, definiendo las dimensiones en pixeles que deseamos obtener de los frames de nuestros videos y customizando los canaloes a analisar(RGB y GRAYSCALE), al siguiente script:
+Seguidamente ordenamos nuestos videos en carpetas con el nombre de las letras del abecedario, cargamos nuestro dataset de videos, definiendo las dimensiones en pixeles que deseamos obtener de los frames de nuestros videos y customizando los canales a analisar(RGB y GRAYSCALE), al siguiente script:
 
 ```
 from_mp4_to_jpg.py
 ```
-Donde se almacenaran los siguientes 
+
 Ordenamos nuestro nuevo dataset de fotos en carpetas con el nombre de las letras del abecedario. 
 Cargamos nuestro dataset de fotos,ordenandolos en las filas por etiquetas y en las columnas por pixeles , al siguiente script:
 
@@ -66,7 +66,7 @@ Para ello cargaremos nuestro dataset de archivos csv al siguiente script:
 ```
 shuffle.py
 ```
-
+Seguidamente separamos cada archivo csv en dos tipos, el primero sera para el entrenamiento del modelo y el segundo sera para la prueba(testeo) del modelo este ultimo archivo sera de menor cantidad. Todos los archivos(csv) de entrenamiento tienen en total 32992 filas y los archivos(csv) de prueba(testeo) tienen en total 13000 filas. 
 
 ```
 from_mp4_to_jpg.py
