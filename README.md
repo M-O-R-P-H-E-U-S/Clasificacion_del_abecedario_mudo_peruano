@@ -59,14 +59,20 @@ convert_to_csv.py
 ```
 
 Con un tal de 784 columnas para los frames de (28px)x(28px), 2500 columnas para los frames de (50px)x(50px) en escalas de grises. Y en los 03 canales(RGB) 2352 columnas para los frames de (28px)x(28px), 7500 columnas para los frames de (50px)x(50px).
+
+Ahora que tenemos nuestro dataset en archivos csv,mezclaremos las filas con susrespectivas etiquetas para ser mas dinamico el aprendizaje de nuestro modelo.
+Para ello cargaremos nuestro dataset de archivos csv al siguiente script:
+
+```
+shuffle.py
+```
+
+
 ```
 from_mp4_to_jpg.py
 ```
 ```
-from_mp4_to_jpg.py
-```
-```
-from_mp4_to_jpg.py
+Ploting_images.py
 ```
 
 Experimental
